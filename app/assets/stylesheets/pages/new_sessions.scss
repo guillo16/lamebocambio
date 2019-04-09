@@ -1,0 +1,47 @@
+//banner log in
+.loging {
+  color: white;
+  text-align: center;
+  height: 100vh;
+  // margin-left: auto;
+  // margin-right: auto;
+  // width: 90%;
+  background-size: cover !important;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+    h1 {
+    font-size: 50px;
+    margin-top: 20px;
+    align-text: center;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+
+  p {
+
+    color: white;
+    font-weight: bold;
+
+  }
+  }
+
+
+//log in form
+.log-in {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+
+  p {
+    font-size: 12px;
+  }
+
+
+}
+
+
+
