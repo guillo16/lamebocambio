@@ -5,3 +5,12 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+puts 'clearing database'
+
+Cambio.destroy_all
+
+puts 'creating dolars'
+
+Cambio.create!(dolarc: "44,50", dolarv: "40,50", euroc: "50,50", eurov: "55,40", realc: "10,50", realv: "11,50")
+
+puts 'finished'
