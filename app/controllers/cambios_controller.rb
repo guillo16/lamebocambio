@@ -15,7 +15,7 @@ class CambiosController < ApplicationController
 
   def update
     @cambio.update(cambios_params)
-    redirect_to cambio_path(@cambio)
+    redirect_to root_path
   end
 
   private

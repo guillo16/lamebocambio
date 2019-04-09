@@ -1,1 +1,19 @@
-<h2>hola mundo</h2>
+<h1>Editar</h1>
+
+
+
+<%= simple_form_for @cambio do |f| %>
+        <%= f.error_notification %>
+
+
+<%= f.input :dolarc, required: true, value: @cambio.dolarc %>
+         <%= f.input :dolarv, required: true, value: @cambio.dolarv %>
+          <%= f.input :euroc, required: true, value: @cambio.euroc %>
+          <%= f.input :eurov, required: true, value: @cambio.eurov %>
+          <%= f.input :realc, required: true, value: @cambio.realc %>
+         <%= f.input :realv, required: true, value: @cambio.realv %>
+
+
+<%= f.button :submit, "update", class: 'btn btn-primary' %>
+
+<% end %>
