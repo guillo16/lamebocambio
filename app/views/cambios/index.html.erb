@@ -6,45 +6,45 @@
 </div>
 <section id= "cotizaciones">
   <div class="description">
-  <h1>&nbsp;&nbsp;Cotizaciones</h1>
-  <div class="cotizacion-container">
-    <% @cambios.each do |cambio| %>
-    <table class="table">
-      <thead>
-        <tr>
-          <th scope="col">Moneda</th>
-          <th scope="col"></th>
-          <th scope="col">Venta</th>
-          <th scope="col">Compra</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td><img src="https://res.cloudinary.com/dw7ox75dg/image/upload/v1554760381/flag-usa.jpg" alt=""> <br>Dolar </td>
-          <td></td>
-          <td><%= cambio.dolarv %></td>
-          <td><%= cambio.dolarc %></td>
-        </tr>
-        <tr>
-          <td><img src="https://res.cloudinary.com/dw7ox75dg/image/upload/v1554760381/flag-euro.jpg" alt=""><br>Euro</td>
-          <td></td>
-          <td><%= cambio.eurov %></td>
-          <td><%= cambio.euroc %></td>
-        </tr>
-        <tr>
-          <td><img src="https://res.cloudinary.com/dw7ox75dg/image/upload/v1554760381/flag-br.jpg" alt=""><br>Real</td>
-          <td></td>
-          <td><%= cambio.realv %></td>
-          <td><%= cambio.realc %></td>
-        </tr>
-      </tbody>
-    </table>
-    <div class="dolar-footer">
-      <p>Actualizado: <%= cambio.updated_at.in_time_zone("Buenos Aires").strftime('%d/%m/%y - %H:%M') %> - <%= link_to 'Lamebo',cambio_path(cambio) %> </p>
+    <h1>&nbsp;&nbsp;Cotizaciones</h1>
+    <div class="cotizacion-container">
+      <% @cambios.each do |cambio| %>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Moneda</th>
+            <th scope="col"></th>
+            <th scope="col">Venta</th>
+            <th scope="col">Compra</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><img src="https://res.cloudinary.com/dw7ox75dg/image/upload/v1554760381/flag-usa.jpg" alt=""> <br>Dolar </td>
+            <td></td>
+            <td><%= cambio.dolarv %></td>
+            <td><%= cambio.dolarc %></td>
+          </tr>
+          <tr>
+            <td><img src="https://res.cloudinary.com/dw7ox75dg/image/upload/v1554760381/flag-euro.jpg" alt=""><br>Euro</td>
+            <td></td>
+            <td><%= cambio.eurov %></td>
+            <td><%= cambio.euroc %></td>
+          </tr>
+          <tr>
+            <td><img src="https://res.cloudinary.com/dw7ox75dg/image/upload/v1554760381/flag-br.jpg" alt=""><br>Real</td>
+            <td></td>
+            <td><%= cambio.realv %></td>
+            <td><%= cambio.realc %></td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="dolar-footer">
+        <p>Actualizado: <%= cambio.updated_at.in_time_zone("Buenos Aires").strftime('%d/%m/%y - %H:%M') %> - <%= link_to 'Lamebo',cambio_path(cambio) %> </p>
+      </div>
+      <% end %>
     </div>
-    <% end %>
   </div>
-</div>
 </section>
 <section id= "quienes">
   <div class="banner-5" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.4) 0%, rgba(0,36,61,0.4) 50%), url('https://images.unsplash.com/photo-1511881830150-850572962174?ixlib=rb-1.2.1&auto=format&fit=crop&w=1234&q=80');">
@@ -60,10 +60,12 @@
     </div>
   </div>
 </section>
-<div class="direccion">
+<section id= 'contacto'>
+  <div class="direccion">
     <h3> Buenos Aires</h3>
     <p> Av. Callao 1125 </p>
     <p> +54 (11) 4413-4253</p>
     <p>CABA</p>
     <a href="mailto:youremailaddress">lamebo-casadecambio@gmail.com</a>
   </div>
+</section>
