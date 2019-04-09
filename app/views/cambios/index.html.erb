@@ -1,0 +1,38 @@
+<div class="cotizacion-container">
+  <% @cambios.each do |cambio| %>
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Moneda</th>
+        <th scope="col"></th>
+        <th scope="col">Venta</th>
+        <th scope="col">Compra</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><img src="https://res.cloudinary.com/dw7ox75dg/image/upload/v1554760381/flag-usa.jpg" alt=""> <br>Dolar </td>
+        <td></td>
+        <td><%= cambio.dolarv %></td>
+        <td><%= cambio.dolarc %></td>
+      </tr>
+      <tr>
+        <td><img src="https://res.cloudinary.com/dw7ox75dg/image/upload/v1554760381/flag-euro.jpg" alt=""><br>Euro</td>
+        <td></td>
+        <td><%= cambio.eurov %></td>
+        <td><%= cambio.euroc %></td>
+      </tr>
+      <tr>
+        <td><img src="https://res.cloudinary.com/dw7ox75dg/image/upload/v1554760381/flag-br.jpg" alt=""><br>Real</td>
+        <td></td>
+        <td><%= cambio.realv %></td>
+        <td><%= cambio.realc %></td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="dolar-footer">
+    <p>Actualizado: <%= cambio.updated_at.strftime('%d/%m/%y - %H.%M') %>-<%= link_to 'Lamebo',cambio_path(cambio) %> </p>
+  </div>
+  <% end %>
+</div>
+
