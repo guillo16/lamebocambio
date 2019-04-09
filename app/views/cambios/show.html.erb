@@ -1,0 +1,33 @@
+<h1>Cotizacion</h1>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Moneda</th>
+      <th scope="col"></th>
+      <th scope="col">Venta</th>
+      <th scope="col">Compra</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Dolar</td>
+      <td></td>
+      <td><%= @cambio.dolarv %></td>
+      <td><%= @cambio.dolarc %></td>
+    </tr>
+    <tr>
+      <td>Euro</td>
+      <td></td>
+      <td><%= @cambio.eurov %></td>
+      <td><%= @cambio.euroc %></td>
+    </tr>
+    <tr>
+      <td>Real</td>
+      <td></td>
+      <td><%= @cambio.realv %></td>
+      <td><%= @cambio.realc %></td>
+    </tr>
+  </tbody>
+</table>
+
+<%= link_to 'Edit' , edit_cambio_path %>
