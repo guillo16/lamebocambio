@@ -24,3 +24,13 @@
 .footer .fa-heart {
   color: #D23333;
 }
+
+.footer-copyright {
+  font-size: 30px;
+  a {
+    color: lightgrey;
+    &:hover {
+      color: black;
+    }
+  }
+}
