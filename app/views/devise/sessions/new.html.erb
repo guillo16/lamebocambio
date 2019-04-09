@@ -1,4 +1,15 @@
-<h2>Log in</h2>
+<div class="loging" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('https://res.cloudinary.com/dw7ox75dg/image/upload/v1554834460/photo-1534469650761-fce6cc26ac0d.jpg');">
+  <div class="loging-content">
+    <h1>Lamebo</h1>
+    <p>nos dedicamos a la mejor forma de cambio lo mejor de nuesto pais</p>
+    <%= link_to 'Volver', root_path,  class: "btn btn-primary btn-lg" %>
+  </div>
+</div>
+<br>
+<br>
+<div class="log-in">
+  <h4>Iniciar sesion (solo para socios)</h4>
+  <p>Consultas: <a href="mailto:youremailaddress">lamebo-casadecambio@gmail.com</a></p>
 
 <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
   <div class="form-inputs">
@@ -13,12 +24,13 @@
   </div>
 
   <div class="form-actions">
-    <%= f.button :submit, "Log in" %>
+    <%= f.button :submit, "Ingresar" , class: "btn btn-primary btn-lg"%>
+    <br>
+    <br>
   </div>
 <% end %>
-
-<%= render "devise/shared/links" %>
 
 <!-- delete la pagina new registration -->
 <!-- delete render devise/shared/links -->
 <!-- crear usuario en la terminal de heroku -->
+</div>
