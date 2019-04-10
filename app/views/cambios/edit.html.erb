@@ -3,16 +3,17 @@
 
 
 <%= simple_form_for @cambio do |f| %>
-        <%= f.error_notification %>
+<%= f.error_notification %>
 
 
 <%= f.input :dolarc, label: 'Dolar Compra', required: true, value: @cambio.dolarc %>
-         <%= f.input :dolarv, label: 'Dolar Venta', required: true, value: @cambio.dolarv %>
-          <%= f.input :euroc, label: 'Euro Compra', required: true, value: @cambio.euroc %>
-          <%= f.input :eurov, label: 'Euro Venta', required: true, value: @cambio.eurov %>
-          <%= f.input :realc, label: 'Real Compra', required: true, value: @cambio.realc %>
-         <%= f.input :realv,label: 'Real Venta', required: true, value: @cambio.realv %>
-
+<%= f.input :dolarv, label: 'Dolar Venta', required: true, value: @cambio.dolarv %>
+<%= f.input :euroc, label: 'Euro Compra', required: true, value: @cambio.euroc %>
+<%= f.input :eurov, label: 'Euro Venta', required: true, value: @cambio.eurov %>
+<%= f.input :realc, label: 'Real Compra', required: true, value: @cambio.realc %>
+<%= f.input :realv,label: 'Real Venta', required: true, value: @cambio.realv %>
+<%= f.input :uruguayo, label: 'Uruguayo Compra', required: true, value: @cambio.uruguayo %>
+<%= f.input :uruguayov,label: 'Uruguayo Venta', required: true, value: @cambio.uruguayov %>
 
 <%= f.button :submit, "Actualizar Cambio", class: 'btn btn-primary' %>
 
