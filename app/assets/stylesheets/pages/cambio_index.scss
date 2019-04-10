@@ -170,8 +170,8 @@
 
 .direccion {
   margin-top: 50px;
-  margin-left: 30px;
-  margin-bottom: 60px;
+  width: 90%;
+  margin: auto;
   h3 {
     font-weight: bold;
     font-size: 25px;
@@ -180,14 +180,22 @@
   p {
     margin-top: 0px;
     margin-bottom: 5px;
+    i {
+      font-size: 25px;
+    }
   }
 
   a {
-    color: blue;
-    font-weight: 15px;
+    color: black;
+    font-weight: bold;
     &:hover {
       text-decoration: none;
-      color: lightblue;
+      color: lightgrey;
     }
+  }
+
+  img {
+    margin-bottom: 50px;
+    width: 50%;
   }
 }
