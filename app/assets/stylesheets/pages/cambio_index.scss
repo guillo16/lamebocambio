@@ -5,11 +5,27 @@
 }
 
 .table {
-  margin-top: 70px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  margin-top: 50px;
+  border-color: red;
   th {
-    color: black;
     font-weight: bold;
+    color: darkgrey;
     font-size: 25px;
+    padding: 10px;
+    vertical-align: top;
+  }
+  td {
+    padding: 10px;
+
+  }
+  img {
+    marign: auto;
+    vertical-align: top;
+    width: 34px;
+    height: 20px;
   }
 }
 
@@ -24,6 +40,17 @@
     &:hover {
       text-decoration: none;
     }
+  }
+}
+.description {
+  h1 {
+    font-size: 50px;
+    font-weight: bold;
+    width: 100%;
+    background-color: #002783;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 }
 
@@ -60,43 +87,6 @@
   font-weight: bold;
 }
 
-// Cotizaciones
-.description {
-  h1 {
-    font-size: 50px;
-    font-weight: bold;
-    width: 100%;
-    background-color: #002783;
-    color: white;
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-}
-
-.table {
-  margin-left: auto;
-  margin-right: auto;
-  width: 90%;
-  margin-top: 50px;
-  border-color: red;
-  th {
-    font-weight: bold;
-    color: darkgrey;
-    font-size: 25px;
-    padding: 10px;
-    vertical-align: top;
-  }
-  td {
-    padding: 10px;
-
-  }
-  img {
-    marign: auto;
-    vertical-align: top;
-    width: 34px;
-    height: 20px;
-  }
-}
 // Banner 3
 .banner-5 {
   color: white;
