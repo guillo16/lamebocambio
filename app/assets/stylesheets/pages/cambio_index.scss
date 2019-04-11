@@ -198,12 +198,6 @@
     border: 2px solid;
     border-color: white;
     border-radius: 6px;
-
-    transition: transform .2s; /* Animation */
-    width: 370px;
-  &:hover {
-    transform: scale(1.5);
-  }
   }
 }
 
