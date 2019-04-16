@@ -194,5 +194,18 @@
   }
 }
 
+// carrousel
 
+.carousel-item {
+   img {
+    height: 100vh;
+    object-fit: cover;
+   }
+}
 
+.carousel-caption {
+ bottom: 320px;
+    h3 {
+      font-size: 35px;
+    }
+}
