@@ -96,6 +96,12 @@
   text-align: center;
   margin-right: 50px;
   margin-top: 80px;
+
+  .logo {
+    width: 280px;
+    border: none;
+    margin-top: -20px;
+  }
   img {
     width: 370px;
     border: 2px solid;
@@ -104,6 +110,84 @@
   }
 
   h3 {
+    font-weight: bold;
+    font-size: 24px;
+  }
+
+  p {
+    margin-top: 0px;
+    margin-bottom: 1px;
+    font-size: 16px;
+    i {
+      font-size: 25px;
+    }
+  }
+
+  a {
+    color: black;
+    font-weight: bold;
+    &:hover {
+      text-decoration: none;
+      color: lightgrey;
+    }
+  }
+
+  h4 {
+    font-weight: bold;
+    font-size: 16px;
+  }
+
+  h2 {
+
+    font-size: 12px;
+  }
+
+}
+.direccion-img {
+
+  img {
+    margin-top: 50px;
+    margin-bottom: 80px;
+    width: 570px;
+    height: 540px;
+    border: 2px solid;
+    border-color: white;
+    border-radius: 6px;
+    text-align: center;
+
+  }
+}
+
+@media (max-width: 800px) {
+  .direccion {
+    display: block;
+  }
+  .direccion-img {
+    img {
+       // margin-top: 50px;
+    margin-bottom: 80px;
+    width: 370px;
+    height: 330px;
+    border: 2px solid;
+    border-color: white;
+    border-radius: 6px;
+    text-align: center;
+    }
+  }
+  .direccion-content {
+     .logo {
+      display: block;
+      text-align: center;
+      margin: auto;
+      width: 330px;
+     }
+
+    margin-right: 0px;
+    img {
+     display: none;
+    }
+
+    h3 {
     font-weight: bold;
     font-size: 35px;
   }
@@ -126,42 +210,15 @@
     }
   }
 
-
-}
-.direccion-img {
-
-  img {
-    margin-top: 50px;
-    margin-bottom: 80px;
-    width: 570px;
-    border: 2px solid;
-    border-color: white;
-    border-radius: 6px;
-    text-align: center;
-
+  h4 {
+    font-weight: bold;
+    font-size: 16px;
   }
-}
 
-@media (max-width: 800px) {
-  .direccion {
-    display: block;
+  h2 {
+
+    font-size: 12px;
   }
-  .direccion-img {
-    img {
-       // margin-top: 50px;
-    margin-bottom: 80px;
-    width: 370px;
-    border: 2px solid;
-    border-color: white;
-    border-radius: 6px;
-    text-align: center;
-    }
-  }
-  .direccion-content {
-    margin-right: 0px;
-    img {
-     display: none;
-    }
   }
 }
 
