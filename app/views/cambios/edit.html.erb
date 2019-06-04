@@ -14,8 +14,8 @@
 <%= f.input :realv,label: 'Real Venta', required: true, value: @cambio.realv %>
 <%= f.input :uruguayo, label: 'Uruguayo Compra', required: true, value: @cambio.uruguayo %>
 <%= f.input :uruguayov,label: 'Uruguayo Venta', required: true, value: @cambio.uruguayov %>
-<%= f.input :uruguayo, label: 'Chileno Compra', required: true, value: @cambio.chilenoc %>
-<%= f.input :uruguayov,label: 'Chileno Venta', required: true, value: @cambio.chilenov %>
+<%= f.input :chilenoc, label: 'Chileno Compra', required: true, value: @cambio.chilenoc %>
+<%= f.input :chilenov,label: 'Chileno Venta', required: true, value: @cambio.chilenov %>
 
 <%= f.button :submit, "Actualizar Cambio", class: 'btn btn-primary' %>
 
