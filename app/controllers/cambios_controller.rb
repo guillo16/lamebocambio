@@ -21,7 +21,7 @@ class CambiosController < ApplicationController
   private
 
   def cambios_params
-    params.require(:cambio).permit(:dolarv, :dolarc, :euroc, :eurov, :realc, :realv, :uruguayo, :uruguayov, :chilenoc, :chilenov)
+    params.require(:cambio).permit(:dolarv, :dolarc, :euroc, :eurov, :realc, :realv, :uruguayo, :uruguayov, :chilenoc, :chilenov, :gbpcompra, :gbpventa)
   end
 
   def set_cambios

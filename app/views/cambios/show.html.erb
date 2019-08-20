@@ -1,46 +1,56 @@
-<h1>Cotizacion</h1>
-<table class="table">
-  <thead>
-    <tr>
-      <th scope="col">Moneda</th>
-      <th scope="col"></th>
-      <th scope="col">Venta</th>
-      <th scope="col">Compra</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Dolar</td>
-      <td></td>
-      <td><%= @cambio.dolarv %></td>
-      <td><%= @cambio.dolarc %></td>
-    </tr>
-    <tr>
-      <td>Euro</td>
-      <td></td>
-      <td><%= @cambio.eurov %></td>
-      <td><%= @cambio.euroc %></td>
-    </tr>
-    <tr>
-      <td>Real</td>
-      <td></td>
-      <td><%= @cambio.realv %></td>
-      <td><%= @cambio.realc %></td>
-    </tr>
-    <tr>
-      <td>Uruguayo</td>
-      <td></td>
-      <td>$<%= @cambio.uruguayo %></td>
-      <td>$<%= @cambio.uruguayov %></td>
-    </tr>
-    <tr>
-      <td>Chileno</td>
-      <td></td>
-      <td>$<%= @cambio.chilenoc %></td>
-      <td>$<%= @cambio.chilenov %></td>
-    </tr>
-  </tbody>
-</table>
-
-<h1><%= link_to 'Editar' , edit_cambio_path %></h1>
-<h1><%= link_to 'Atras', root_path %></h1>
+<div class="form-container">
+  <h1>Cotizacion</h1>
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Moneda</th>
+        <th scope="col"></th>
+        <th scope="col">Venta</th>
+        <th scope="col">Compra</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Dolar</td>
+        <td></td>
+        <td><%= @cambio.dolarv %></td>
+        <td><%= @cambio.dolarc %></td>
+      </tr>
+      <tr>
+        <td>Euros</td>
+        <td></td>
+        <td><%= @cambio.eurov %></td>
+        <td><%= @cambio.euroc %></td>
+      </tr>
+      <tr>
+        <td>Libras</td>
+        <td></td>
+        <td><%= @cambio.gbpcompra %></td>
+        <td><%= @cambio.gbpventa %></td>
+      </tr>
+      <tr>
+        <td>Real</td>
+        <td></td>
+        <td><%= @cambio.realv %></td>
+        <td><%= @cambio.realc %></td>
+      </tr>
+      <tr>
+        <td>Uruguayo</td>
+        <td></td>
+        <td>$<%= @cambio.uruguayo %></td>
+        <td>$<%= @cambio.uruguayov %></td>
+      </tr>
+      <tr>
+        <td>Chileno</td>
+        <td></td>
+        <td>$<%= @cambio.chilenoc %></td>
+        <td>$<%= @cambio.chilenov %></td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="text-center">
+    <h1><%= link_to 'Editar' , edit_cambio_path , class: "btn btn-primary"%></h1>
+    <h1><%= link_to 'Atras', root_path , class: "btn btn-danger"%></h1>
+  </div>
+  <br><br><br><br>
+</div>
