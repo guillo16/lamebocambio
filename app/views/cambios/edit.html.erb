@@ -1,25 +1,27 @@
-<h1>Editar</h1>
+<br><br><br><br>
+<div class="container">
+  <h1>Editar</h1>
 
 
 
-<%= simple_form_for @cambio do |f| %>
-<%= f.error_notification %>
+  <%= simple_form_for @cambio do |f| %>
+  <%= f.error_notification %>
 
 
-<%= f.input :dolarc, label: 'Dolar Compra', required: true, value: @cambio.dolarc %>
-<%= f.input :dolarv, label: 'Dolar Venta', required: true, value: @cambio.dolarv %>
-<%= f.input :euroc, label: 'Euro Compra', required: true, value: @cambio.euroc %>
-<%= f.input :eurov, label: 'Euro Venta', required: true, value: @cambio.eurov %>
-<%= f.input :realc, label: 'Real Compra', required: true, value: @cambio.realc %>
-<%= f.input :realv,label: 'Real Venta', required: true, value: @cambio.realv %>
-<%= f.input :uruguayo, label: 'Uruguayo Compra', required: true, value: @cambio.uruguayo %>
-<%= f.input :uruguayov,label: 'Uruguayo Venta', required: true, value: @cambio.uruguayov %>
-<%= f.input :chilenoc, label: 'Chileno Compra', required: true, value: @cambio.chilenoc %>
-<%= f.input :chilenov,label: 'Chileno Venta', required: true, value: @cambio.chilenov %>
+  <%= f.input :dolarc, label: 'Dolar Compra', required: true, value: @cambio.dolarc %>
+  <%= f.input :dolarv, label: 'Dolar Venta', required: true, value: @cambio.dolarv %>
+  <%= f.input :euroc, label: 'Euro Compra', required: true, value: @cambio.euroc %>
+  <%= f.input :eurov, label: 'Euro Venta', required: true, value: @cambio.eurov %>
+  <%= f.input :realc, label: 'Real Compra', required: true, value: @cambio.realc %>
+  <%= f.input :realv,label: 'Real Venta', required: true, value: @cambio.realv %>
+  <%= f.input :uruguayo, label: 'Uruguayo Compra', required: true, value: @cambio.uruguayo %>
+  <%= f.input :uruguayov,label: 'Uruguayo Venta', required: true, value: @cambio.uruguayov %>
+  <%= f.input :chilenoc, label: 'Chileno Compra', required: true, value: @cambio.chilenoc %>
+  <%= f.input :chilenov,label: 'Chileno Venta', required: true, value: @cambio.chilenov %>
 
-<%= f.button :submit, "Actualizar Cambio", class: 'btn btn-primary' %>
+  <%= f.button :submit, "Actualizar Cambio", class: 'btn btn-primary' %>
 
-<% end %>
+  <% end %>
 
-
+</div>
 
